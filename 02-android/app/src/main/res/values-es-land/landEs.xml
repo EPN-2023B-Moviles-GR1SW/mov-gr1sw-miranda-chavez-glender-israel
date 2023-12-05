@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="saludo">landscape spanish</string>
+    <color name="fondo">#812929</color>
+    <color name="letras">#919191</color>
+</resources>

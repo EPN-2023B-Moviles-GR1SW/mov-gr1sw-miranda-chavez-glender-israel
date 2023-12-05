@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">B2023-gr1sw-gimc</string>
+    <string name="app_name" translatable="false">B2023-gr1sw-gimc</string>
+
     <string name="saludo">Buenos dias</string>
+    <color name="fondo">#c6b3e8</color>
+    <color name="letras">#000000</color>
+
 </resources>

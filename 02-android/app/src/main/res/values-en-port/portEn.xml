@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="saludo">portrait english</string>
+    <color name="fondo">#3E2A98</color>
+    <color name="letras">#F1BCAF</color>
+</resources>
