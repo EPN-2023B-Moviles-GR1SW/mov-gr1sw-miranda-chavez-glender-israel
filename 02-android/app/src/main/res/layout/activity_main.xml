@@ -11,10 +11,20 @@
         android:layout_width="98dp"
         android:layout_height="33dp"
         android:text="@string/saludo"
-        android:textColor="#FAFAFA"
+        android:textColor="@color/letras"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595" />
+
+    <Button
+        android:id="@+id/btn_ciclo_vida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="c. vida"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        tools:layout_editor_absoluteX="321dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
