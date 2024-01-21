@@ -1,6 +1,7 @@
 package com.example.examen01.models
 
 import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 
 class Actor {
     private var id: Int = 0
@@ -61,7 +62,9 @@ class Actor {
 
 
     override fun toString(): String {
-        return "Actor(id=$id, name='$name', age=$age, hasOscar=$hasOscar, money=$money)"
+        return "===============\n" +
+                "id=$id \nname=$name \nage=$age \nhasOscar=$hasOscar, \nmoney=$money)" +
+                "\n==============="
     }
 
 

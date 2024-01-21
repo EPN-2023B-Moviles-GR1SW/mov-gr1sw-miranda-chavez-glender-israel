@@ -3,7 +3,6 @@ package com.example.examen01.models
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
-import java.time.LocalDate
 
 class ActorDAO(context: Context?) : DAO<Actor>(context) {
 
@@ -132,8 +131,8 @@ class ActorDAO(context: Context?) : DAO<Actor>(context) {
             val money = resultadoConsultaLectura.getDouble(4)
 
 
-            val autor = Actor(id, name, age, hasOscar, money)
-            listaActores.add(autor)
+            val actor = Actor(id, name, age, hasOscar, money)
+            listaActores.add(actor)
         }
 
         resultadoConsultaLectura.close()

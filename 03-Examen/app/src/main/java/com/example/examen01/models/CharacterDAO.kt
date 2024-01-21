@@ -20,12 +20,13 @@ class CharacterDAO(context: Context?) : DAO<Character>(context) {
     override fun add(character: Character) {
         val baseDatosEscritura = writableDatabase
         val valoresAGuardar = ContentValues()
-        valoresAGuardar.put("id", character.getId())
+
         valoresAGuardar.put("name", character.getName())
         valoresAGuardar.put("age", character.getAge())
         valoresAGuardar.put("movie", character.getMovie())
         valoresAGuardar.put("alias", character.getAlias())
         valoresAGuardar.put("firstActingDate", character.getFirstActingDate().toString())
+        valoresAGuardar.put("idActor", character.getIdActor())
 
         baseDatosEscritura.insert("CHARACTER", null, valoresAGuardar)
         baseDatosEscritura.close()
@@ -46,12 +47,13 @@ class CharacterDAO(context: Context?) : DAO<Character>(context) {
     override fun edit(character: Character) {
         val conexionEscritura = writableDatabase
         val valoresAActualizar = ContentValues()
-        valoresAActualizar.put("id", character.getId())
+
         valoresAActualizar.put("name", character.getName())
         valoresAActualizar.put("age", character.getAge())
         valoresAActualizar.put("movie", character.getMovie())
         valoresAActualizar.put("alias", character.getAlias())
         valoresAActualizar.put("firstActingDate", character.getFirstActingDate().toString())
+        valoresAActualizar.put("idActor", character.getIdActor())
 
         val parametrosConsultaActualizar = arrayOf(character.getId().toString())
         val resultadoActualizacion = conexionEscritura.update(

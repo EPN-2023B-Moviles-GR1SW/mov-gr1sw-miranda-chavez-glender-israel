@@ -95,7 +95,9 @@ class Character {
     }
 
     override fun toString(): String {
-        return "Character(id=$id, name='$name', age=$age, movie='$movie', alias='$alias', firstActingDate=$firstActingDate)"
+        return "============" +
+                "id=$id \nname=$name \nage=$age \nmovie=$movie \nalias=$alias \nfirstActingDate=$firstActingDate)" +
+                "\n============"
     }
 
 
