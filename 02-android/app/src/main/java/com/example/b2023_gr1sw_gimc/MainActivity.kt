@@ -152,6 +152,11 @@ class MainActivity : AppCompatActivity() {
         intentExplicito.putExtra("apellido","Miranda")
         intentExplicito.putExtra("edad",22)
 
+        intentExplicito.putExtra(
+            "objetoEntrenador",
+            BEntrenador(1, "Glender", "Descripcion")
+        )
+
         callbackContenidoIntentExplicito.launch(intentExplicito)
     }
 
